@@ -8,7 +8,7 @@ Download the exe file from [the **latest** release](https://github.com/DhruvMitn
 
 ## The hard way-:
 
-1. Download either of the javascript files ([`calc.js`](https://github.com/DhruvMitna/calculator/blob/master/calc.js)) (they are just different implementations of the same logic.)
+1. Download either of the javascript files ([`calc.js`](https://github.com/DhruvMitna/calculator/blob/master/calc.js) is recommended) (they are just different implementations of the same logic.)
 2. Download [node.js](https://nodejs.org/dist/v14.17.4/node-v14.17.4-x64.msi).
 3. Download the folder [`node_modules`](https://github.com/DhruvMitna/calculatork/blob/master/node_modules), [`package.json`](https://github.com/DhruvMitna/calculator/blob/master/package.json) and [`package-lock.json`](https://github.com/DhruvMitna/calculator/blob/master/package-lock.json)
 4. Open a command prompt window into the folder
