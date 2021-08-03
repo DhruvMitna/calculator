@@ -1,12 +1,12 @@
 This program can either add, subtract, multiply or divide 2 numbers.
 
-## How to run
+# How to run
 
-# The easy way-:
+## The easy way-:
 
 Download the exe file from [the **latest** release](https://github.com/DhruvMitna/calculator/releases/latest) and run it.
 
-# The hard way-:
+## The hard way-:
 
 1. Download either of the javascript files ([`calc.js`](https://github.com/DhruvMitna/calculator/blob/master/calc.js)) (they are just different implementations of the same logic.)
 2. Download [node.js](https://nodejs.org/dist/v14.17.4/node-v14.17.4-x64.msi).
