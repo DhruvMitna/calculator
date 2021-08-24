@@ -4,7 +4,8 @@ This program can either add, subtract, multiply or divide 2 numbers.
 
 ## The easy way-:
 
-Download the exe file from [the **latest** release](https://github.com/DhruvMitna/calculator/releases/latest) and run it.
+1. Download `release.zip` from [the **latest** release](https://github.com/DhruvMitna/calculator/releases/latest) and extract it.
+2. Open the extracted folder and run the exe file inside it.
 
 ## The hard way-:
 
