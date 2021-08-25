@@ -1,4 +1,4 @@
-This program can either add, subtract, multiply or divide 2 numbers.
+This program can add, subtract, multiply or divide 2 numbers.
 
 # How to run
 
