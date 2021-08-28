@@ -1,11 +1,13 @@
-﻿using System;
+﻿// The default code.
+using System;
 
-namespace c_ {
+namespace calculator {
 
     class Program {
 
         static void Main(string[] args) {
 
+            // Getting the necessary values from the suer.
             Console.Write("Enter the first number: ");
             string first = Console.ReadLine();
             int First = int.Parse(first);
@@ -17,6 +19,7 @@ namespace c_ {
             Console.Write("Enter the operation to be done on the numbers (+ - * /): ");
             string operation = Console.ReadLine();
 
+            // Executing the correct operation by comparing user input.
             if (operation == "+") Console.WriteLine(First + Second);
 
             else if (operation == "-") {
@@ -46,6 +49,7 @@ namespace c_ {
 
             } else Console.WriteLine("Please enter a valid value.");
 
+            // Stopping the window from closing instantly using an input.
             Console.Write("\nPress enter to exit...");
             Console.ReadLine();
 
