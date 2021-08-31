@@ -7,51 +7,66 @@ namespace calculator {
 
         static void Main(string[] args) {
 
-            // Getting the necessary values from the suer.
-            Console.Write("Enter the first number: ");
-            string first = Console.ReadLine();
-            int First = int.Parse(first);
+            try {
 
-            Console.Write("Enter the second number: ");
-            string second = Console.ReadLine();
-            int Second = int.Parse(second);
+                // Getting the necessary values from the suer.
+                Console.Write("Enter the first number: ");
+                string first = Console.ReadLine();
+                int First = int.Parse(first);
 
-            Console.Write("Enter the operation to be done on the numbers (+ - * /): ");
-            string operation = Console.ReadLine();
+                Console.Write("Enter the second number: ");
+                string second = Console.ReadLine();
+                int Second = int.Parse(second);
 
-            // Executing the correct operation by comparing user input.
-            if (operation == "+") Console.WriteLine(First + Second);
+                Console.Write("Enter the operation to be done on the numbers (+ - * /): ");
+                string operation = Console.ReadLine();
 
-            else if (operation == "-") {
+                // Executing the correct operation by comparing user input.
+                if (operation == "+") Console.WriteLine(First + Second);
 
-                Console.Write("Enter 1 if you want to do " + first + " - " + second +" and enter 0 if you want to do " + second + " - " + first + ": ");
+                else if (operation == "-") {
 
-                string order = Console.ReadLine();
+                    Console.Write("Enter 1 if you want to do " + first + " - " + second + " and enter 0 if you want to do " + second + " - " + first + ": ");
 
-                if (order == "1") Console.WriteLine(First - Second);
+                    string order = Console.ReadLine();
 
-                else if (order == "0") Console.WriteLine(Second - First);
+                    if (order == "1") Console.WriteLine(First - Second);
 
-                else Console.WriteLine("Please enter a valid value.");
+                    else if (order == "0") Console.WriteLine(Second - First);
 
-            } else if (operation == "*") Console.WriteLine(First * Second);
+                    else Console.WriteLine("Please enter a valid value.");
 
-            else if (operation == "/") {
+                } else if (operation == "*") Console.WriteLine(First * Second);
 
-                Console.Write("Enter 1 if you want to do " + first + " / " + second +" and enter 0 if you want to do " + second + " / " + first + ": ");
-                string order = Console.ReadLine();
+                else if (operation == "/") {
 
-                if (order == "1") Console.WriteLine(First / Second);
+                    Console.Write("Enter 1 if you want to do " + first + " / " + second + " and enter 0 if you want to do " + second + " / " + first + ": ");
+                    string order = Console.ReadLine();
 
-                else if (order == "0") Console.WriteLine(Second / First);
+                    if (order == "1") Console.WriteLine(First / Second);
 
-                else Console.WriteLine("Pleaes enter a valid value.");               
+                    else if (order == "0") Console.WriteLine(Second / First);
 
-            } else Console.WriteLine("Please enter a valid value.");
+                    else Console.WriteLine("Pleaes enter a valid value.");
 
-            // Stopping the window from closing instantly using an input.
-            Console.Write("\nPress enter to exit...");
-            Console.ReadLine();
+                } else Console.WriteLine("Please enter a valid value.");
+
+            // If the user enters a string when a number is supposed to be entered, the program wont crash with an error and will print out this message instead.
+            } catch (FormatException) {
+
+                Console.WriteLine("Please enter a valid value.");
+
+            } catch (DivideByZeroException) {
+
+                Console.WriteLine("Devision by 0 is not defined");
+
+            } finally {
+
+                // Stopping the window from closing instantly using an input.
+                Console.Write("\nPress enter to exit...");
+                Console.ReadLine();
+
+            }
 
         }
 
