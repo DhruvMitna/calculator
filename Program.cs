@@ -60,13 +60,11 @@ namespace calculator {
 
                 Console.WriteLine("Devision by 0 is not defined");
 
-            } finally {
+            }  
 
-                // Stopping the window from closing instantly using an input.
-                Console.Write("\nPress enter to exit...");
-                Console.ReadLine();
-
-            }
+            // Stopping the window from closing instantly using an input.
+            Console.Write("\nPress enter to exit...");
+            Console.ReadLine();    
 
         }
 
