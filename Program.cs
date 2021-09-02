@@ -1,20 +1,12 @@
 ﻿using System;
-using System.Diagnostics;
 
-namespace c_
-{
-    [DebuggerDisplay("{" + nameof(DebuggerDisplay ) + "(),nq}")]
-    class Program
-    {
-        public Program()
-        {
-        }
+namespace calculator {
 
-        static void Main(string[] args)
-        {
+    class Program {
 
-            try
-            {
+        static void Main(string[] args) {
+
+            try {
 
                 // Getting the necessary values from the suer.
                 Console.Write("Enter the first number: ");
@@ -29,12 +21,9 @@ namespace c_
                 string operation = Console.ReadLine();
 
                 // Executing the correct operation by comparing user input.
-                if (operation
-                    == "+") Console.WriteLine(First + Second);
+                if (operation == "+") Console.WriteLine(First + Second);
 
-                else if (operation
-                         == "-")
-                {
+                else if (operation == "-") {
 
                     Console.Write($"Enter 1 if you want to do {first} - {second} and enter 0 if you want to do {second} - {first}: ");
 
@@ -44,73 +33,37 @@ namespace c_
 
                     else Console.WriteLine("Please enter a valid value.");
 
-                }
+                } else if (operation == "*") Console.WriteLine(First * Second);
 
-                else if (operation
-                         == "*") Console.WriteLine(First
-                                                   * Second);
-
-                else if (operation
-                         == "/")
-                {
+                else if (operation == "/") {
 
                     Console.Write($"Enter 1 if you want to do {first} / {second} and enter 0 if you want to do {second} / {first}: ");
-                    string order = Console.ReadLine();
 
-                    switch (order
-)
-                    {
-                        case "1":
-                            Console.WriteLine(First
-                                              / Second);
-                            break;
-                        case "0":
-                            Console.WriteLine(Second
-                                              / First);
-                            break;
-                        default:
-                            Console.WriteLine("Pleaes enter a valid value.");
-                            break;
-                    }
+                    if (Console.ReadLine() == "1") Console.WriteLine(First / Second);
 
-                }
-                else Console.WriteLine("Please enter a valid value.");
+                    else if (Console.ReadLine() == "0") Console.WriteLine(Second / First);
 
-                // If the user enters a string when a number is supposed to be entered, the program wont crash with an error and will print out this message instead.
-            }
-            catch (FormatException)
-            {
+                    else Console.WriteLine("Pleaes enter a valid value.");
+
+                } else Console.WriteLine("Please enter a valid value.");
+
+            // If the user enters a string when a number is supposed to be entered, the program wont crash with an error and will print out this message instead.
+            } catch (FormatException) {
 
                 Console.WriteLine("Please enter a valid value.");
 
-            }
-            catch (DivideByZeroException)
-            {
+            } catch (DivideByZeroException) {
 
                 Console.WriteLine("Devision by 0 is not defined");
 
-            }
+            }  
 
             // Stopping the window from closing instantly using an input.
-            Console.Write(@"
-Press enter to exit...");
-            Console.ReadLine();
+            Console.Write("\nPress enter to exit...");
+            Console.ReadLine();    
 
         }
 
-        public override bool Equals(object obj) => base.Equals(obj);
-
-        public override int GetHashCode() => base.GetHashCode();
-
-        public override string ToString() => base.ToString();
-
-        private string DebuggerDisplay
-        {
-            get
-            {
-                return ToString();
-            }
-        }
     }
 
 }
