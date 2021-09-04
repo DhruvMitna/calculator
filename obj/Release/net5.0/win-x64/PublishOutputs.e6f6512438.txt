@@ -1,0 +1,6 @@
+C:\Users\Owner\Desktop\E\Workspace\calculator\bin\Release\net5.0\win-x64\publish\c#.pdb
+C:\Users\Owner\Desktop\E\Workspace\calculator\bin\Release\net5.0\win-x64\publish\clrcompression.dll
+C:\Users\Owner\Desktop\E\Workspace\calculator\bin\Release\net5.0\win-x64\publish\clrjit.dll
+C:\Users\Owner\Desktop\E\Workspace\calculator\bin\Release\net5.0\win-x64\publish\coreclr.dll
+C:\Users\Owner\Desktop\E\Workspace\calculator\bin\Release\net5.0\win-x64\publish\mscordaccore.dll
+C:\Users\Owner\Desktop\E\Workspace\calculator\bin\Release\net5.0\win-x64\publish\c#.exe
