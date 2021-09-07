@@ -1,4 +1,5 @@
-﻿using System;
+﻿// The default code
+using System;
 
 namespace calculator {
 
