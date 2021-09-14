@@ -9,9 +9,9 @@ This program can add, subtract, multiply or divide 2 numbers.
 
 ## The hard way-:
 
-1. Download [`calc.js`](https://github.com/DhruvMitna/calculator/blob/master/calc.js).
-2. Download [node.js](https://nodejs.org/dist/v14.17.4/node-v14.17.4-x64.msi).
-3. Download the folder [`node_modules`](https://github.com/DhruvMitna/calculatork/blob/master/node_modules), [`package.json`](https://github.com/DhruvMitna/calculator/blob/master/package.json) and [`package-lock.json`](https://github.com/DhruvMitna/calculator/blob/master/package-lock.json)
+1. Download [`calc.js`](https://raw.githubusercontent.com/DhruvMitna/calculator/master/calc.js) (ctrl + s).
+2. Install [node.js](https://nodejs.org/dist/v14.17.4/node-v14.17.4-x64.msi).
+3. Download the folder [`node_modules`](https://raw.githubusercontent.com/DhruvMitna/calculator/master/node_modules), [`package.json`](https://raw.githubusercontent.com/DhruvMitna/calculator/master/package.json) and [`package-lock.json`](https://raw.githubusercontent.com/DhruvMitna/calculator/master/package-lock.json)
 4. Press `win + r` and type `'cmd'`.
 5. Type `'cd Downloads'`
 6. Type `'node calc.js'` and press enter.
