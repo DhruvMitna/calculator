@@ -9,7 +9,7 @@ namespace calculator {
 
             try {
 
-                // Getting the necessary values from the suer.
+                // Getting the necessary values from the user.
                 Console.Write("Enter the first number: ");
                 string first = Console.ReadLine();
                 int First = int.Parse(first);
